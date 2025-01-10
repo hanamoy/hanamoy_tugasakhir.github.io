@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOSPITALBasamo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>HOSPITALBasamo</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#dokter">Dokter</a></li>
+                    <li><a href="#pendaftaran">Pendaftaran Online</a></li>
+                    <li><a href="#kepuasan">Kepuasan</a></li>
+                    <li><a href="" class="tbl-biru">Masuk</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <section id="beranda">
+            <img src="home.png" alt="image" height="500" width="500">
+            <div class="kolom">
+                <p class="deskripsi">Kesehatan Segalanya!</p>
+                <h2>Mulailah Menyayangi Diri Sendiri dengan Hidup yang Sehat ❤️</h2>
+                <p>Mulailah langkah sehat anda hari ini bersama HOSPITALBasamo, Rumah Sakit pilihan keluarga</p>
+            </div>
+        </section>
+        <section id="tentang">
+            <div class="kolom">
+                <p class="deskripsi">HOSPITALBasamo</p>
+                <h2>Tentang Kami</h2>
+                <p> Selamat datang di HOSPITALBasamo, rumah sakit terpercaya yang hadir untuk memberikan layanan kesehatan terbaik bagi Anda dan keluarga. Kami percaya bahwa kesehatan adalah fondasi utama dalam hidup yang penuh makna, dan karena itu kami berkomitmen untuk memberikan perawatan medis yang berkualitas tinggi, aman, dan penuh perhatian.</p>
+                <p> Dengan didukung oleh tim medis yang profesional dan berpengalaman, serta fasilitas kesehatan yang modern dan canggih, HOSPITALBasamo siap memberikan solusi medis terbaik untuk berbagai kebutuhan kesehatan Anda. Kami menyediakan berbagai layanan mulai dari konsultasi medis umum, spesialisasi, hingga perawatan intensif untuk kondisi kesehatan yang lebih kompleks</p>
+            </div>
+            <img src="about-1.png" alt="iamge" height="500" width="500">
+        </section>
+        <section id="dokter">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">HOSPITALBasamo</p>
+                    <h2>Top Dokter</h2>
+                    <p>Kami bangga memiliki dokter-dokter yang ahli dan berpengalaman di bidangnya. Di HOSPITALBasamo, setiap dokter adalah ahli yang terlatih, berkomitmen untuk memberikan perawatan berkualitas tinggi dengan pendekatan yang penuh empati dan profesional!</p>
+                </div>
+                <div class="dokter-list">
+                    <div class="kartu-dokter">
+                        <img src="dokter1.jpg">
+                        <p> dr. Nadia Fitri, Sp.OT </p>
+                    </div>
+                    <div class="kartu-dokter">
+                        <img src="dokter2.jpg">
+                        <p> dr. Rina Andini, Sp.A </p>
+                    </div>
+                    <div class="kartu-dokter">
+                        <img src="dokter3.jpg">
+                        <p> dr. Anisa Pratama, Sp.PD </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pendaftaran">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Pendaftaran Online</p>
+                    <h2>Pendaftaran</h2>
+                    <p>"Siap Memulai Perjalanan Kesehatan Anda?"
+                        Proses pendaftaran kami mudah dan cepat! Sebelum mengisi formulir, pastikan Anda mempersiapkan informasi dasar seperti nama lengkap, umur, nomor BPJS, dan preferensi dokter. Kami akan segera menghubungi Anda untuk mengonfirmasi pendaftaran dan menyediakan informasi lebih lanjut.</p>
+                </div>
+                <div class="pendaftaran-form">
+                    <!-- Start of the form -->
+                    <form action="simpan_pendaftaran.php" method="post">
+                        <table width="500" height="300" border="1" align="center">
+                            <tr>
+                                <td height="26">Nama Lengkap</td>
+                                <td><input name="nama_lengkap" type="text" id="nama_lengkap" /></td>
+                            </tr>
+                            <tr>
+                                <td height="26">Umur</td>
+                                <td><input name="Umur" type="text" id="Umur" /></td>
+                            </tr>
+                            <tr>
+                                <td height="26">No BPJS</td>
+                                <td><input name="no_bpjs" type="text" id="no_bpjs" /></td>
+                            </tr>
+                            <tr>
+                                <td height="26">Dokter</td>
+                                <td><input name="dokter" type="text" id="dokter" /></td>
+                            </tr>
+                            <tr>
+                                <td height="26">Waktu Pendaftaran</td>
+                                <td><input name="waktu_pendaftaran" type="text" id="waktu_pendaftaran" /></td>
+                            </tr>
+                            <tr>
+                                <td height="26" colspan="2" align="center">
+                                    <input type="submit" name="save" value="Save">
+                                    <input type="reset" name="reset" value="Reset">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <!-- End of the form -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="kepuasan">
+        <div class="wrappar">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>HOSPITALBasamo</h3>
+                    <p>Semoga proses penyembuhan ini memberikan kekuatan, kedamaian, dan kesehatan kembali. Kami berharap tubuh dan pikiran segera pulih, agar bisa kembali beraktivitas dengan baik.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>HOSPITALBasamo adalah rumah sakit terpercaya yang menyediakan layanan kesehatan berkualitas tinggi dengan tim medis profesional dan fasilitas modern, untuk memastikan kesehatan Anda terjaga dengan baik.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Jl. Perintis Kemerdekaan padang</p>
+                    <p>Kode pos: 656377</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sosial</h3>
+                    <p>Instagram HOSPITALBasamo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2024. <b>HOSPITALBasamo</b> All rights Reserved.
+        </div>
+    </div>
+</div>
+</body>
+</html>
